@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><br>
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+    <script>
+        function js_style(){
+
+            //First Way
+            // document.getElementById("text").style.backgroundColor= "blue";
+            // document.getElementById("text").style.fontSize="40px";
+            // document.getElementById("text").style.fontFamily="Serif";
+            // document.getElementById("text").style.fontStyle="Italic";
+            // document.getElementById("text").style.fontWeight="bold";
+            // document.getElementById("text").style.color="white";
+            
+            //Other Way
+            document.getElementById("text").style.cssText = "background-color:blue; font-size:40px; font-style:italic; color:white; font-family: sans-serif"
+        }
+
+    </script>
+</head
+<body>
+    <p id='text'>JavaScript Exercises - w3resource</p>
+    <div>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+</body>
+</html>

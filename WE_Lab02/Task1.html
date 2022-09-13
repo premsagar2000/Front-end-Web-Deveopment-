@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Task1.css">
+</head>
+<body>
+
+    <h1>Payment Form</h1>
+        <form> 
+            
+            <h2> Step 1: Your details</h2>
+            <div>
+                <label for="na"> Name</label>
+                <input type="text" placeholder="First and Last name" id="na">
+            </div>
+
+            <div>
+                <label for="email"> Email</label>
+                <input type="text" placeholder="example@domain.com" id="email">
+            </div>
+
+            <div>
+                <label for="phone"> Phone</label>
+                <input type="text" placeholder="Eg. +92345 0000000" id="phone"> 
+
+            </div>
+
+            <h2>Step 2: Delievery Address</h2>
+
+            <div clas="add"> 
+                <label >Address</label>
+                <textarea > </textarea>
+            </div>
+
+            <div>
+                <label for="post code"> Email</label>
+                <input type="text"  id="post code">
+            </div>
+
+            <div class="country">
+                <label for="country"> Country</label>
+                <input type="text" id="country"> 
+
+            </div>
+
+
+            <h2>Step 3: Card details </h2>
+            <div class="card">
+                <h3>Card type</h3>
+                
+                <input type="radio" id="radio1" name="card"value="Visa"> <img src="visa.png"> VISA
+                
+                <input type="radio" id="radio2" name="card"value="Debit"> <img src="debit.png"> Debit
+                
+                <input type="radio" id="radio3" name="card" value="Master Card"><img src="mc.png"> Mastercard   
+            </div>
+
+            <div class="cardnumber">
+
+                <label for="cn"> Card number</label>
+                <input type="number" id="cn">
+            </div>
+
+            <div class="securitycode">
+                <label for="sc">Security code</label>
+                <input type="number" id="sc">
+            </div>
+            <div class="noc">
+                <label for="name"> Name on card </label>
+                <input type="text" id="name"placeholder="Exact name as on the card">
+
+            </div>
+
+            
+                <button class="btn">BUY IT!</button>
+           
+           
+        </form>
+        
+</body>
+</html>

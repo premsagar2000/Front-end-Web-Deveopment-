@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <script>
+        document.write("This text is written using js");
+        document.writeln("<h1>This is text </h1>")
+
+        function generateHeadings(){
+            txt = document.getElementById("p1").innerHTML;
+            str=""
+            for(i=1;i<=6;i++){
+                str+= document.writeln("<h"+i+">This is html text </h"+i+">");
+            }
+            document.getElementById("p1").innerHTML = txt+str;
+        }
+
+        function createList(){
+        //    newItem = document.createElement("li");
+        //    txt = document.createTextNode("New Item using JS");
+        //    newItem.appendChild(txt); // Li will have txt using appendChild Method
+        //    document.getElementById("myList").appendChild(newItem)
+
+        str = document.getElementById("myList").innerHTML;
+        document.getElementById("myList").innerHTML = str+"<li> New Li </li>";
+
+        }//end function
+       
+        function createList2(){
+            studentName = document.getElementById("studentName").value;
+            studentID = document.getElementById("studentID").value;
+            chk = document.getElementById("check1")
+            if(chk.checked == true)
+                alert("Name is "+studentName + "\n  ID is"+studentID);
+
+                document.getElementById("myList").style.backgroundColor = "red";
+        }
+
+        
+
+        
+
+    </script>
+</head>
+<body>
+    
+    <p id="p1"> This is Paragraph 1 </p>
+    <button onclick="generateHeadings()">Click me</button>
+    <button onclick="createList()">Click me to create List</button>
+    <ul id="myList">
+        <li>Item 1</li>
+    </ul>
+
+
+    Name: <input type="text" id="studentName"> <br><br>
+    Student ID: <input type="text" id="studentID"> <br><br>
+    <input type="checkbox" id="check1" > isChecked?
+    <button onclick="createList2()">
+        click to get Name and ID
+    </button>
+
+
+    <script>
+        txt = document.getElementById("p1").innerHTML;
+        alert(txt)
+    </script>
+
+
+   
+</body>
+</html>

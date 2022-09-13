@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset=utf-8 />
+ <title>JS DOM</title>
+ <script>
+    function set_background(){
+
+        //1st Way
+        document.getElementsByTagName("p")[0].style.backgroundColor = "red";
+        document.getElementsByTagName("p")[1].style.backgroundColor = "red";
+
+        //2nd Way
+        // for(i=0;i<document.getElementsByTagName("p").length;i++)
+        //     document.getElementsByTagName("p")[i].style.backgroundColor = "red";
+    }
+</script>
+</head>
+
+
+<body>
+ <input type="button" value="Click to set paragraph background color" onclick="set_background()">
+ <p>w3resource JavaScript Exercises</p>
+ <p>w3resource PHP Exercises</p>
+</body>
+</html>

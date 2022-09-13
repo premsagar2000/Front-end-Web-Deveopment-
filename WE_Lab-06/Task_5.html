@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <br>
+    <meta charset=utf-8 />
+    <title>Insert row in a table - w3resource</title>
+    <script>
+
+        function insert_Row(){
+            td1 = document.createElement("td");
+            td2 = document.createElement("td");
+            
+            txt1 = document.createTextNode("Row3 Cell1");
+            txt2 = document.createTextNode("Row3 Cell2");
+            
+            td1.appendChild(txt1); // tr will have txt using appendChild Method
+            td2.appendChild(txt2);
+            document.getElementById("sampleTable").appendChild(td1)  
+            document.getElementById("sampleTable").appendChild(td2)  
+        }
+        
+    </script>
+</head>
+<body>
+    <table id="sampleTable" border="1">
+    <tr>
+        <td>Row1 cell1</td>
+        <td>Row1 cell2</td>
+    </tr>
+    <tr>
+        <td>Row2 cell1</td>
+        <td>Row2 cell2</td>
+    </tr>
+    </table>
+
+    <br>
+    <input type="button" onclick="insert_Row()" value="Insert row">
+
+</body>
+</html>
